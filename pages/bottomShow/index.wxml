@@ -1,0 +1,11 @@
+<!-- <view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+  <view class="modals-cancel" bindtap="hideModal"></view>
+  <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}"></view>
+</view> -->
+
+<button bindtap="bindShowBottom">点我</button>
+<bottom-show title-name="123" id="bottomShow">
+  <view slot="header">header</view>
+  <text slot="content">content</text>
+  <text slot="footer">footer</text>
+</bottom-show>

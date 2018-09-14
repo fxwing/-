@@ -1,0 +1,8 @@
+ <view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+  <view class="modals-cancel" bindtap="hideModal"></view>
+  <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}">
+    <slot name="header"></slot>
+    <slot name="content"></slot>
+    <slot name="footer"></slot>
+  </view>
+</view>

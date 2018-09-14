@@ -1,0 +1,4 @@
+<navigator class='nav-item' url='/pages/index/index'>
+  抽奖的转盘</navigator>
+<navigator class='nav-item' url='/pages/bottomShow/index'>底部弹出</navigator>
+<navigator class='nav-item' url='/pages/test/test'>上传多张图片</navigator>

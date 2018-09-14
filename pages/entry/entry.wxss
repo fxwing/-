@@ -1,0 +1,15 @@
+/* pages/entry/entry.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.nav-item{
+  height: 80rpx;
+  width: 100%;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #e6e6e6;
+  text-align: center;
+}

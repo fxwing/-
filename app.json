@@ -1,14 +1,15 @@
 {
-  "pages":[
+  "pages": [
+    "pages/entry/entry",
+    "pages/index/index",
     "pages/test/test",
-    "pages/logs/logs"
-     
-    
+    "pages/logs/logs",
+    "pages/bottomShow/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "常用小程序案例",
+    "navigationBarTextStyle": "black"
   }
 }
