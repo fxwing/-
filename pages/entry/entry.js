@@ -5,9 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    showModal: false
   },
-
+  bindShowModal() {
+    this.setData({
+      showModal: true
+    })
+  },
+  modalCancel(){
+    console.log('点击了取消')
+  },
+  modalConfirm(){
+    console.log('点击了确定')
+  },
   /**
    * 生命周期函数--监听页面加载
    */

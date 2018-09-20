@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.2.3",
-	"appid": "wxc763d86018dcbebc",
-	"projectname": "%E5%A4%A7%E5%A4%A7%E6%B6%88%E6%81%AF",
+	"appid": "wxddfaf48bf59e4d31",
+	"projectname": "%E5%B8%B8%E7%94%A8%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%A1%88%E4%BE%8B",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -33,12 +33,30 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
 					"name": "底部弹框",
-					"pathName": "pages/bottomShow/index"
+					"pathName": "pages/bottomShow/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "左滑删除",
+					"pathName": "pages/slideRemove/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "弹幕视频",
+					"pathName": "pages/video/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "手写签名",
+					"pathName": "pages/sign/index"
 				}
 			]
 		}

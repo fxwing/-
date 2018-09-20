@@ -1,0 +1,21 @@
+<scroll-view scroll-y="{{scrollY}}" class='containerWrap'>
+  <view class="container">
+    <view class="container-item">
+      <view wx:for="{{items}}" wx:key="{{index}}">
+        <view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart"
+          bindtouchmove="touchmove" bindtouchend='touchend'>
+          <view class="content">
+            <view class="content-box">
+              <view class="content-box-left" bind:tap="selectAddress" data-index="{{index}}">
+                <view class="content-address">
+                  <text class="content-address_address">{{item.content}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="del" catchtap="del" data-index="{{index}}" data-addressId="{{item.content.user_address_id}}">删除</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

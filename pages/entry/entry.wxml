@@ -2,3 +2,12 @@
   抽奖的转盘</navigator>
 <navigator class='nav-item' url='/pages/bottomShow/index'>底部弹出</navigator>
 <navigator class='nav-item' url='/pages/test/test'>上传多张图片</navigator>
+<navigator class='nav-item' url='/pages/slideRemove/index'>左滑删除</navigator>
+<navigator class='nav-item' url='/pages/video/index'>弹幕</navigator>
+<navigator class='nav-item' url='/pages/sign/index'>手写签字</navigator>
+<button bind:tap="bindShowModal">显示弹框</button>
+<button type="primary" size="40" session-from="sobot|{{userInfo.nickName}}|{{userInfo.avatarUrl}}" open-type="contact">测试联系客服</button>
+<modal show="{{showModal}}" height='60%' leftText="查看奖励" rightText="我知道了" bindcancel="modalCancel" bindconfirm='modalConfirm'>
+  <view slot="header">header</view>
+  <text slot="content">content</text>
+</modal>
