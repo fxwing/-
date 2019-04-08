@@ -8,12 +8,16 @@ const formatTime = date => {
 
   return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
 }
-
+const res = wx.getSystemInfoSync()
+const px2rpx = (px) => 750 * px /res.screenWidth
 const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
-}
+} 
+// 节流函数   一段时间执行一次
+// 防抖函数   最后一次执行  
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  px2rpx
 }

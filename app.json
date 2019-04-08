@@ -7,7 +7,15 @@
     "pages/bottomShow/index",
     "pages/slideRemove/index",
     "pages/video/index",
-    "pages/sign/index"
+    "pages/sign/index",
+    "pages/static/index",
+    "pages/slide/index",
+    "pages/store/index",
+    "pages/flow/index",
+    "pages/subtitle/index",
+    "pages/left-show/index",
+    "pages/img-cropper/index",
+    "pages/infiniteScroll/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

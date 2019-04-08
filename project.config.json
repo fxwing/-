@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -56,7 +56,25 @@
 				{
 					"id": -1,
 					"name": "手写签名",
-					"pathName": "pages/sign/index"
+					"pathName": "pages/sign/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "滑动文章进度",
+					"pathName": "pages/slide/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "左侧弹出",
+					"pathName": "pages/left-show/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "图片剪辑",
+					"pathName": "pages/img-cropper/index"
 				}
 			]
 		}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "custom-ul": "../components/components-communication/custom-ul-component",
+    "custom-li": "../components/components-communication/custom-li-component"
+  }
+}

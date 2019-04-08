@@ -1,6 +1,6 @@
 <view class='mask' wx:if='{{show}}' catchtap='clickMask'>
 </view>
-<view class='modal-content' style='height:{{height}}' wx:if='{{show}}'>
+<view class='modal-content'  wx:if='{{show}}'>
   <scroll-view scroll-y class='main-content'>
     <slot name="header"></slot>
     <slot name="content"></slot>

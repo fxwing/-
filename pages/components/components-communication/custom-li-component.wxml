@@ -1,0 +1,2 @@
+<!--components/custom-li-component.wxml-->
+<text catchtap='onClick'> {{child}}</text>

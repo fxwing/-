@@ -1,13 +1,19 @@
-<navigator class='nav-item' url='/pages/index/index'>
-  抽奖的转盘</navigator>
-<navigator class='nav-item' url='/pages/bottomShow/index'>底部弹出</navigator>
-<navigator class='nav-item' url='/pages/test/test'>上传多张图片</navigator>
-<navigator class='nav-item' url='/pages/slideRemove/index'>左滑删除</navigator>
-<navigator class='nav-item' url='/pages/video/index'>弹幕</navigator>
-<navigator class='nav-item' url='/pages/sign/index'>手写签字</navigator>
-<button bind:tap="bindShowModal">显示弹框</button>
-<button type="primary" size="40" session-from="sobot|{{userInfo.nickName}}|{{userInfo.avatarUrl}}" open-type="contact">测试联系客服</button>
+<view class="skeleton" style="width:100%">
+  <navigator wx:for="{{routers}}" class='nav-item  skeleton-rect' url="{{item.path}}">{{item.text}}</navigator>
+  <li class="skeleton-rect">
+    <view bind:tap="bindShowModal" class="nav-item">
+      <text>显示弹框</text>
+    </view>
+    <button
+     class="nav-item"
+     session-from="sobot|{{userInfo.nickName}}|{{userInfo.avatarUrl}}"
+     open-type="contact">
+      联系客服
+    </button>
+  </li>
+</view>
 <modal show="{{showModal}}" height='60%' leftText="查看奖励" rightText="我知道了" bindcancel="modalCancel" bindconfirm='modalConfirm'>
   <view slot="header">header</view>
   <text slot="content">content</text>
 </modal>
+<skeleton selector="skeleton" loading="spin" bgcolor="#FFF" wx:if="{{showSkeleton}}"></skeleton>

@@ -1,0 +1,5 @@
+
+<view class="wrapper" bindtap='bindClick'>
+<slot></slot>
+<view><text>{{parent}}</text></view>
+</view>

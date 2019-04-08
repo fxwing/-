@@ -1,0 +1,4 @@
+.wrapper{
+  height: 300rpx;
+  border-bottom: 1rpx  solid  #e6e6e6;
+}

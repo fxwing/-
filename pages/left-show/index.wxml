@@ -1,0 +1,14 @@
+<view class="leftBox {{leftVisible?'leftBox-show':''}}" >
+</view>
+<view class="bottomBox {{bottomVisible?'bottomBox-show':''}}" >
+</view>
+<view class="mask" style="visibility:{{leftVisible?'visible':'hidden'}};opacity:{{leftVisible?1:0}}" bindtap="bindShowLeft"></view>
+
+<view class="mask" style="visibility:{{bottomVisible?'visible':'hidden'}};opacity:{{bottomVisible?1:0}}" bindtap="bindShowBottom"></view>
+
+<button bindtap="bindShowLeft">点击左侧弹出</button>
+
+
+
+
+<button bindtap="bindShowBottom">点击底部弹出</button>

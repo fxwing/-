@@ -1,0 +1,22 @@
+
+
+.text{
+  width: 100%;
+  text-align: justify;
+  /* padding: 10rpx 20rpx; */
+  padding-bottom: 100rpx;
+}
+.slider{
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  width: 100%;
+  background: #e6e6e6;
+  z-index: 999;
+}
+.slider-container{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+}

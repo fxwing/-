@@ -1,33 +1,34 @@
-// pages/entry/entry.js
+const {routers} = require('../../config/router')
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    showModal: false
+    showModal: false,
+    showSkeleton: true,
+    routers:[],
   },
   bindShowModal() {
     this.setData({
       showModal: true
     })
   },
-  modalCancel(){
+  modalCancel() {
     console.log('点击了取消')
   },
-  modalConfirm(){
+  modalConfirm() {
     console.log('点击了确定')
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const that = this;
+    this.setData({ routers})
+    setTimeout(() => {
+      that.setData({
+        showSkeleton: false
+      })
+    }, 2000)
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
 
   },

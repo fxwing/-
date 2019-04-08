@@ -1,0 +1,39 @@
+.box {
+  position: relative;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  overflow: hidden;
+}
+
+.txt {
+  white-space: nowrap;
+}
+
+#txt1 {
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: left 1s linear;
+}
+
+#txt2, .flex-box {
+  position: absolute;
+  top: 0;
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+@keyframes roll {
+  0% {
+    left: 750rpx;
+  }
+
+  100% {
+    left: -100%;
+  }
+}

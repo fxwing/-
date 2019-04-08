@@ -1,0 +1,13 @@
+<custom-ul  parent="parent">
+  <custom-li child="child"> </custom-li>
+  <custom-li child="child"> </custom-li>
+</custom-ul >
+<view>
+<text>globalDatad的数据{{index}}</text>
+<button bindtap="addGlobalData">加</button>
+<button bindtap="minGlobalData">减</button>
+</view>
+<view>姓名：{{userInfo.nickName}}</view>
+<view>年龄：{{userInfo.gender}}</view>
+<view>头像：<image   class="image"src="{{userInfo.avatarUrl}}"></image></view>
+<button  bindtap="changeInfo">修改个人资料</button>

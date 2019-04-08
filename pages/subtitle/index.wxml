@@ -1,0 +1,18 @@
+<view class='wp'>
+  <!-- 纯css实现 -->
+  <view class='box'>
+    <view id='txt1' class='txt' style='animation: roll linear {{duration}}s infinite;'>{{text}}</view>
+  </view>
+  <!-- 显示完后再显示 -->
+  <view class='box'>
+    <view id='txt2' class='txt' style='left: {{posLeft1}}px'>{{text}}</view>
+  </view>
+  <!-- 出现空白后就显示 -->
+  <view class='box'>
+    <view class='flex-box' style='left: {{posLeft2}}px'>
+      <view id='txt3' class='txt'>{{text}}</view>
+      <view class='txt' style='margin-left: {{marginLeft}}px'>{{text}}</view>
+    </view>
+  </view>
+</view>
+

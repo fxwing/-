@@ -3,6 +3,6 @@
   <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}">
     <slot name="header"></slot>
     <slot name="content"></slot>
-    <slot name="footer"></slot>
+    <slot name="footer" bindtap="hideModal"></slot>
   </view>
 </view>

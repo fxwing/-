@@ -6,10 +6,17 @@ page{
   align-items: center;
   width: 100%;
 }
+button::after{
+  border: none;
+}
+button{
+  background: #fff;
+  color:#000;
+}
 .nav-item{
-  height: 80rpx;
+  height: 100rpx;
   width: 100%;
-  line-height: 80rpx;
+  line-height: 100rpx;
   border-bottom: 1rpx solid #e6e6e6;
   text-align: center;
 }
